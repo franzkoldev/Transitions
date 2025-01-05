@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Scale animation*/
+        .container1 {
+            width: 600px;
+            height: 200px;
+            background: papayawhip;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background: salmon;           
+        }
+        .box:hover {
+            transform: scale(1.5)
+        }
+        .box2 {
+            transition: transform 1s; 
+        }
+        /*Translate animation*/
+        .container2 {
+            width: 600px;
+            height: 200px;
+            background: papayawhip;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: salmon;            
+        }
+        .circle:hover {
+            translate: 200px; 
+        }
+        .circle {
+            transition: translate 1s;
+        }
+        /*Rotate animation*/
+        .container3 {
+            width: 600px;
+            height: 200px;
+            background: papayawhip;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-right: 100px solid transparent;
+            border-left: 100px solid transparent;
+            border-bottom: 200px solid salmon;
+        }
+        .triangle:hover {
+            transform: rotate(180deg) translateX(-60px);            
+        }
+        .triangle {
+            transition: transform 1s;
+        }
+    </style>
+</head>
+<body>
+    <!--Scale animation-->
+    <div class="container1">
+        <div class="box" class="box1"></div>
+        <div class="box box2"></div>
+    </div>
+    <!--translate animation-->
+    <div class="container2">
+        <div class="circle"></div>
+    </div>
+    <!--Rotate animation-->
+    <div class="container3">
+        <div class="triangle"></div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container:hover .circle {
+            transform: translateX(200px);
+        }
+        .circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .one {
+            background: purple;
+            transition: transform 1s linear;
+            transition-delay: 0.5s;
+        }
+        .two {
+            background: blue;
+            transition: transform 1s ease;
+            transition-delay: 1s;
+        }
+        .three {
+            background: green;
+            transition: transform 1s ease-in;
+            transition-delay: 1.5s;
+        }
+        .four {
+            background: orange;
+            transition: transform 1s ease-out;
+            transition-delay: 2s;
+        }
+        .five {
+            background: red;
+            transition: transform 1s ease-in-out;
+            transition-delay: 2.5s;
+        }
+        .six {
+            background: yellow;
+            transition: transform 1s;
+            transition-delay: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <div class="circle four"></div>
+        <div class="circle five"></div>
+        <div class="circle six"></div>
+    </div>
+</body>
+</html>

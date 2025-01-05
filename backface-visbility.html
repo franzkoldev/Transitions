@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            position: relative;
+            backface-visibility: hidden;;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .face {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            position: absolute;
+        }
+        .face.front {
+            background: pink;
+        }
+        .face.back {
+            background: papayawhip;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="face" class="front"></div>
+        <div class="face" class="back"></div>
+    </div>
+</body>
+</html>
