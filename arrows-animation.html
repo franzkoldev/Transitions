@@ -16,14 +16,33 @@
             justify-content: center;
             margin: 0 auto;
             margin-top: 100px;
+            position: relative;
         }
         .arrow {
+            position: relative;
             width: 40px;
             height: 40px;
             border-top: 10px solid slateblue;
-            border-right: 10px solid slateblue;
+            border-right: 10px solid slateblue;            
+            animation-name: arrow-load;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
             transform: rotate(45deg);            
         }
+        @keyframes arrow-load {
+            0% {
+                transform: rotate(0) translateX(0);
+            }
+            50%{
+
+            }
+            100% {
+                transform: rotate(45deg) translateX(100px);
+            }
+        }
+
     </style>
 </head>
 <body>
